@@ -124,5 +124,5 @@ app.get('/getUsers', (req, res) => {
 
 app.use('/api', sliderDataRoutes);
 
-const port = 8000;
+const port = process.env.PORT || 8000;
 app.listen(port, () => console.log(`server is listening on port ${port}`))
